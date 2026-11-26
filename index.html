@@ -16,11 +16,20 @@
     </nav>
   </header>
 
-  <div class="kartu-profil">
-    <h2>Profil Siswa</h2>
-    <p>Nama: Developer A</p>
-    <p>Kelas: XI RPL</p>
-  </div>
+  <main>
+    <section>
+      <div class="kartu-profil">
+        <h2>Profil Siswa</h2>
+        <p>Nama: Developer A</p>
+        <p>Kelas: XI RPL</p>
+      </div>
+
+      <article id="kotak-pesan">
+        <h2>Status Pesan</h2>
+        <p id="pesanStatus">Sedang Memuat...</p>
+      </article>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2026 Tim LKPD</p>
@@ -29,6 +38,9 @@
   <script>
     const judul = document.getElementById("judulUtama");
     judul.textContent = "Selamat Datang Siswa";
+
+    const pesan = document.getElementById("pesanStatus");
+    pesan.textContent = "Data Berhasil Disimpan";
   </script>
 </body>
 </html>
